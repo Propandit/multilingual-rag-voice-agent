@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1260" viewBox="0 0 1600 1260" role="img" aria-labelledby="title desc">
+<title id="title">RAG voice agent pipeline</title><desc id="desc">Approved sources are extracted and validated into text and structured stores. Visitor speech reaches a cloud conversational model that calls local retrieval tools, receives evidence, generates an answer, and streams speech to the handset.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#8291A6"/></marker>
+<marker id="data" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#0F766E"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="60" y="76" fill="#12253F" font-size="44" font-weight="700">From approved knowledge to a spoken answer</text>
+<text x="60" y="119" fill="#51627A" font-size="23" font-weight="400">Multilingual voice agent  /  Native handset  /  Retrieval at answer time</text>
+<rect x="40" y="164" width="1520" height="266" rx="24" fill="#F8FAFC" stroke="#DFE6EE" stroke-width="1.5"/>
+<text x="65" y="204" fill="#12253F" font-size="20" font-weight="700">01  PREPARE THE KNOWLEDGE</text>
+<rect x="65" y="234" width="300" height="158" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="87" y="272" fill="#12253F" font-size="25" font-weight="650">Approved sources</text>
+<text x="87" y="305" fill="#51627A" font-size="20" font-weight="400">Website text and FAQs</text>
+<text x="87" y="332" fill="#51627A" font-size="20" font-weight="400">Documents, CSV, reports</text>
+<rect x="440" y="234" width="300" height="158" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="462" y="272" fill="#12253F" font-size="25" font-weight="650">Extract &amp; normalize</text>
+<text x="462" y="305" fill="#51627A" font-size="20" font-weight="400">Parse text and tables</text>
+<text x="462" y="332" fill="#51627A" font-size="20" font-weight="400">Preserve fields and units</text>
+<rect x="815" y="234" width="300" height="158" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="837" y="272" fill="#12253F" font-size="25" font-weight="650">Validate &amp; organize</text>
+<text x="837" y="305" fill="#51627A" font-size="20" font-weight="400">Review quality and dates</text>
+<text x="837" y="332" fill="#51627A" font-size="20" font-weight="400">Keep source references</text>
+<rect x="1190" y="234" width="340" height="158" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="1212" y="272" fill="#12253F" font-size="25" font-weight="650">Knowledge store</text>
+<text x="1212" y="305" fill="#51627A" font-size="20" font-weight="400">Text: SQLite FTS5</text>
+<text x="1212" y="332" fill="#51627A" font-size="20" font-weight="400">Tables: dated snapshots</text>
+<path d="M 365 313 L 432 313" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 740 313 L 807 313" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 1115 313 L 1182 313" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="458" width="1520" height="648" rx="24" fill="#F8FAFC" stroke="#DFE6EE" stroke-width="1.5"/>
+<text x="65" y="500" fill="#12253F" font-size="20" font-weight="700">02  RETRIEVE EVIDENCE AND ANSWER</text>
+<path d="M 1530 313 L 1578 313 L 1578 580 L 1538 580" fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#data)"/>
+<path d="M 1578 580 L 1578 750 L 1538 750" fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#data)"/>
+<rect x="65" y="577" width="300" height="151" rx="20" fill="#EDF3FC" stroke="#2F5D9A" stroke-width="1.5"/>
+<text x="87" y="615" fill="#12253F" font-size="25" font-weight="650">Visitor speaks</text>
+<text x="87" y="648" fill="#51627A" font-size="20" font-weight="400">Handset microphone</text>
+<text x="87" y="675" fill="#51627A" font-size="20" font-weight="400">Native audio streaming</text>
+<rect x="440" y="577" width="300" height="151" rx="20" fill="#F2EDFB" stroke="#6D45B7" stroke-width="1.5"/>
+<text x="462" y="615" fill="#12253F" font-size="25" font-weight="650">Speech to text</text>
+<text x="462" y="648" fill="#51627A" font-size="20" font-weight="400">ElevenLabs Agents</text>
+<text x="462" y="675" fill="#51627A" font-size="20" font-weight="400">Recognize visitor speech</text>
+<rect x="815" y="577" width="300" height="151" rx="20" fill="#F2EDFB" stroke="#6D45B7" stroke-width="1.5"/>
+<text x="837" y="615" fill="#12253F" font-size="25" font-weight="650">LLM selects tools</text>
+<text x="837" y="648" fill="#51627A" font-size="20" font-weight="400">Understand the question</text>
+<text x="837" y="675" fill="#51627A" font-size="20" font-weight="400">Request relevant evidence</text>
+<rect x="1190" y="531" width="340" height="123" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="1212" y="569" fill="#12253F" font-size="25" font-weight="650">Search text</text>
+<text x="1212" y="602" fill="#51627A" font-size="20" font-weight="400">FTS5 + relevance ranking</text>
+<text x="1212" y="629" fill="#51627A" font-size="20" font-weight="400">Explanations and procedures</text>
+<rect x="1190" y="701" width="340" height="123" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="1212" y="739" fill="#12253F" font-size="25" font-weight="650">Query structured data</text>
+<text x="1212" y="772" fill="#51627A" font-size="20" font-weight="400">Exact fields and units</text>
+<text x="1212" y="799" fill="#51627A" font-size="20" font-weight="400">Figures and comparisons</text>
+<path d="M 365 652 L 432 652" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 740 652 L 807 652" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 1115 610 L 1152 610 L 1152 592 L 1182 592" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 1115 685 L 1152 685 L 1152 762 L 1182 762" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 1530 620 L 1546 620 L 1546 861 L 1360 861" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M 1360 824 L 1360 912" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1190" y="893" fill="#51627A" font-size="18" font-weight="400">Tool results</text>
+<rect x="1190" y="920" width="340" height="145" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="1212" y="958" fill="#12253F" font-size="25" font-weight="650">Retrieved evidence</text>
+<text x="1212" y="991" fill="#51627A" font-size="20" font-weight="400">Relevant passages or rows</text>
+<text x="1212" y="1018" fill="#51627A" font-size="20" font-weight="400">Source and freshness metadata</text>
+<rect x="815" y="920" width="300" height="145" rx="20" fill="#F2EDFB" stroke="#6D45B7" stroke-width="1.5"/>
+<text x="837" y="958" fill="#12253F" font-size="25" font-weight="650">Generate answer</text>
+<text x="837" y="991" fill="#51627A" font-size="20" font-weight="400">LLM uses returned evidence</text>
+<text x="837" y="1018" fill="#51627A" font-size="20" font-weight="400">Follow the visitor&#x27;s language</text>
+<rect x="440" y="920" width="300" height="145" rx="20" fill="#F2EDFB" stroke="#6D45B7" stroke-width="1.5"/>
+<text x="462" y="958" fill="#12253F" font-size="25" font-weight="650">Text to speech</text>
+<text x="462" y="991" fill="#51627A" font-size="20" font-weight="400">Multilingual voice</text>
+<text x="462" y="1018" fill="#51627A" font-size="20" font-weight="400">Natural pace and phrasing</text>
+<rect x="65" y="920" width="300" height="145" rx="20" fill="#EDF3FC" stroke="#2F5D9A" stroke-width="1.5"/>
+<text x="87" y="958" fill="#12253F" font-size="25" font-weight="650">Visitor hears reply</text>
+<text x="87" y="991" fill="#51627A" font-size="20" font-weight="400">Audio streams to speaker</text>
+<text x="87" y="1018" fill="#51627A" font-size="20" font-weight="400">Conversation continues</text>
+<path d="M 1190 992 L 1123 992" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 815 992 L 748 992" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 440 992 L 373 992" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="65" y="1140" width="18" height="18" rx="4" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="96" y="1156" fill="#51627A" font-size="19" font-weight="400">Local knowledge &amp; tools</text>
+<rect x="395" y="1140" width="18" height="18" rx="4" fill="#F2EDFB" stroke="#6D45B7" stroke-width="1.5"/>
+<text x="426" y="1156" fill="#51627A" font-size="19" font-weight="400">Cloud conversation</text>
+<rect x="686" y="1140" width="18" height="18" rx="4" fill="#EDF3FC" stroke="#2F5D9A" stroke-width="1.5"/>
+<text x="717" y="1156" fill="#51627A" font-size="19" font-weight="400">Physical handset</text>
+<path d="M 962 1149 L 1011 1149" fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#data)"/>
+<text x="1028" y="1156" fill="#51627A" font-size="19" font-weight="400">Reads stored data</text>
+<text x="65" y="1203" fill="#51627A" font-size="21" font-weight="400">English opening, then English / Hindi / Hinglish. Browser optional; cloud voice needs internet.</text>
+</g></svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<title id="title">Validated data refresh pipeline</title><desc id="desc">A scheduled worker fetches a report and validates it. Valid reports become snapshots used by answer tools. Invalid reports leave the last valid snapshot available and record the failure.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#8291A6"/></marker>
+<marker id="data" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#0F766E"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="60" y="76" fill="#12253F" font-size="44" font-weight="700">Keep answers connected to validated data</text>
+<text x="60" y="119" fill="#51627A" font-size="23" font-weight="400">Scheduled refresh  /  Versioned snapshots  /  Last valid data retained on failure</text>
+<rect x="40" y="167" width="1520" height="498" rx="24" fill="#F8FAFC" stroke="#DFE6EE" stroke-width="1.5"/>
+<rect x="65" y="242" width="250" height="151" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="87" y="280" fill="#12253F" font-size="25" font-weight="650">Scheduled worker</text>
+<text x="87" y="313" fill="#51627A" font-size="20" font-weight="400">Run when due</text>
+<text x="87" y="340" fill="#51627A" font-size="20" font-weight="400">Catch up on startup</text>
+<rect x="370" y="242" width="250" height="151" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="392" y="280" fill="#12253F" font-size="25" font-weight="650">Fetch source</text>
+<text x="392" y="313" fill="#51627A" font-size="20" font-weight="400">Collect the report</text>
+<text x="392" y="340" fill="#51627A" font-size="20" font-weight="400">Record retrieval time</text>
+<rect x="675" y="242" width="250" height="151" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="697" y="280" fill="#12253F" font-size="25" font-weight="650">Validate report</text>
+<text x="697" y="313" fill="#51627A" font-size="20" font-weight="400">Check expected fields</text>
+<text x="697" y="340" fill="#51627A" font-size="20" font-weight="400">Check units and values</text>
+<rect x="980" y="242" width="250" height="151" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="1002" y="280" fill="#12253F" font-size="25" font-weight="650">Publish snapshot</text>
+<text x="1002" y="313" fill="#51627A" font-size="20" font-weight="400">Save validated data</text>
+<text x="1002" y="340" fill="#51627A" font-size="20" font-weight="400">Keep earlier versions</text>
+<rect x="1285" y="242" width="250" height="151" rx="20" fill="#EAF7F4" stroke="#0F766E" stroke-width="1.5"/>
+<text x="1307" y="280" fill="#12253F" font-size="25" font-weight="650">Answer tools</text>
+<text x="1307" y="313" fill="#51627A" font-size="20" font-weight="400">Use latest validated</text>
+<text x="1307" y="340" fill="#51627A" font-size="20" font-weight="400">available snapshot</text>
+<path d="M 315 317 L 362 317" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 620 317 L 667 317" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 925 317 L 972 317" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 1230 317 L 1277 317" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="937" y="299" fill="#0F766E" font-size="13" font-weight="700">PASS</text>
+<path d="M 800 393 L 800 482" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="815" y="446" fill="#A15C0B" font-size="16" font-weight="700">FAIL OR UNAVAILABLE</text>
+<rect x="675" y="490" width="555" height="132" rx="20" fill="#FFF5E6" stroke="#A15C0B" stroke-width="1.5"/>
+<text x="697" y="528" fill="#12253F" font-size="25" font-weight="650">Keep the last valid snapshot</text>
+<text x="697" y="561" fill="#51627A" font-size="20" font-weight="400">Record the failed attempt and retry later.</text>
+<text x="697" y="588" fill="#51627A" font-size="20" font-weight="400">Expose freshness limits when answering.</text>
+<path d="M 1230 556 L 1410 556 L 1410 401" fill="none" stroke="#8291A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1260" y="533" fill="#51627A" font-size="18" font-weight="400">Fallback data</text>
+<text x="65" y="704" fill="#51627A" font-size="22" font-weight="400">A daily fetch does not guarantee daily source changes. Documents need a separate update workflow.</text>
+</g></svg>
